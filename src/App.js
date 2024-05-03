@@ -55,22 +55,24 @@ import { Grid, Button } from '@mui/material';
 import generatePDF from 'react-to-pdf';
 import { useRef } from 'react';
 import ButtonPrint from './components/ButtonPrint'
+import Payslipgenerater from './components/Payslipgenerater';
 
 function App() {
   return (
     <div className="App">
-      <ButtonPrint/>
-         {/* <PaymEmployeeForm/> 
-          <CustomizedTables/> 
+      {/* <Payslipgenerater/> */}
+      {/* <ButtonPrint/> */}
+         {/* {/ <PaymEmployeeForm/>  */}
+          {/* <CustomizedTables/>  */}
          <Router>
-          <Routes>
-           <Route path="/" element={<PaymBranchTable />} />
-          <Route path='/paymbranchform' element={<PaymBranchForm/>}/> 
-          <Route path="/" element={<OtsLabTable/>}/>
-          <Route path='/onduty' element={<OTSlabForm/>}/>
-          
-          </Routes>
-         </Router> */}
+          <Routes> 
+          <Route path="/" element={<Payslipgenerater />} />
+          <Route path='/payslip' element={<Payslip/>}/> 
+          {/* <Route path="/" element={<OtsLabTable/>}/>
+          <Route path='/otslab' element={<OTSlabForm/>}/> */}
+           
+           </Routes>
+         </Router> 
          
     </div>
   );
